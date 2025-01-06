@@ -14,7 +14,7 @@ FROM node:18-slim
 
 WORKDIR /app
 
-COPY --from=build /app/dist . 
+COPY --from=build /app/ . 
 
 EXPOSE 3000
 
